@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import NavigationBar from "./components/Navbar";
 import About from "./about/page";
 
@@ -19,12 +20,12 @@ const Home = () => {
             latest in the digital space.
           </p>
 
-          <a
+          <Link
             href="/blog"
             className="inline-block bg-purple-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-110 focus:ring-4 focus:ring-purple-300"
           >
             View Latest Blogs
-          </a>
+          </Link>
         </div>
 
         <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[572px] lg:h-[572px]">

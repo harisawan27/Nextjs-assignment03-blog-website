@@ -1,3 +1,5 @@
+import React from "react";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {
@@ -5,8 +7,6 @@ import {
   FaInstagram,
   FaLinkedin,
   FaGithub,
-  FaPhone,
-  FaMailBulk,
 } from "react-icons/fa";
 import { AiOutlineMail, AiOutlinePhone, AiOutlineX } from "react-icons/ai";
 
@@ -26,63 +26,63 @@ export default function Contact() {
         <div className="flex flex-col items-center space-y-4 mb-12 text-center">
           <div className="flex items-center text-lg hover:text-purple-500 transition duration-300">
             <AiOutlineMail size={24} />
-            <a
+            <Link
               href="mailto:111harisawan@gmail.com"
               className="ml-2 hover:underline"
             >
               111harisawan@gmail.com
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center text-lg hover:text-purple-500 transition duration-300">
             <AiOutlinePhone size={24} />
-            <a href="tel:+92 3132003571" className="ml-2 hover:underline">
+            <Link href="tel:+92 3132003571" className="ml-2 hover:underline">
               +92 313 2003571
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-          <a
+          <Link
             href="https://github.com/harisawan27"
             target="_blank"
             className="hover:text-purple-500 transition duration-200"
             aria-label="Github"
           >
             <FaGithub size={40} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://x.com/harisawan27"
             target="_blank"
             className="hover:text-purple-500 transition duration-200"
             aria-label="Twitter"
           >
             <AiOutlineX size={40} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.facebook.com/profile.php?id=61558545486623"
             target="_blank"
             className="hover:text-purple-500 transition duration-200"
             aria-label="Facebook"
           >
             <FaFacebook size={40} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.instagram.com/mharisawan27"
             target="_blank"
             className="hover:text-purple-500 transition duration-200"
             aria-label="Instagram"
           >
             <FaInstagram size={40} />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/m-haris-awan/"
             target="_blank"
             className="hover:text-purple-500 transition duration-200"
             aria-label="LinkedIn"
           >
             <FaLinkedin size={40} />
-          </a>
+          </Link>
         </div>
       </section>
 

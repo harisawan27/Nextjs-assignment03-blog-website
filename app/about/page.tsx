@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -32,12 +33,12 @@ const About = () => {
             className="rounded-lg"
           />
         </div>
-        <a
+        <Link
           href="/blog"
           className="inline-block bg-purple-500 text-white mt-10 px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-sm lg:text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-110 focus:ring-4 focus:ring-purple-300"
         >
           View Latest Blogs
-        </a>
+        </Link>
       </main>
       <Footer />
     </div>
